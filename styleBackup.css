@@ -1,0 +1,1281 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap');
+
+body {
+    font-family: roboto, sans-serif;
+    color: rgb(150, 150, 150);
+    background-color: white;
+    font-size: 16px;
+    margin: 0;
+}
+
+header {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+label.logo {
+    font-size: 50px;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 2px;
+    padding: 0 20px;
+    line-height: 80px;
+}
+
+nav {
+    background: bwhite;
+    height: 80px;
+    width: 100%;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+
+nav ul li {
+    display: inline-block;
+    line-height: 50px;
+    margin: 0 7px;
+}
+
+nav ul li a {
+    text-transform: uppercase;
+}
+
+a.active,a:hover {
+    transition: .5s;
+}
+
+.checkbut {
+    font-size: 45px;
+    line-height: 80px;
+    float: right;
+    line-height: 80px;
+    margin-right: 20px;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: .5s;
+}
+
+#portadaRud {
+    position: relative;
+    height: 100%;
+}
+#portadaRud>img{
+    width: 100%;
+}
+.portada1 {
+    position: absolute;
+
+    animation: aparecer1 30s ease-in infinite;
+}
+.portada2 {
+    position: absolute;
+    opacity: 0;
+    
+    animation: aparecer2 30s ease-in infinite;
+}
+.portada3 {
+    position: absolute;
+    opacity: 0;
+
+    animation: aparecer3 30s ease-in infinite;
+}
+.portada4 {
+    position: relative;
+    opacity: 0;
+
+    animation: aparecer4 30s ease-in infinite;
+}
+
+footer {
+    width: 100%;
+    height: 5%;
+}
+
+footer p{
+    width: auto;
+    padding: 0 20px;
+}
+
+@keyframes aparecer1 {
+    0% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    75% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes aparecer2 {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    75% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes aparecer3 {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    75% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes aparecer4 {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    75% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+a:hover {
+    color: rgb(255, 149, 62);
+}
+
+#contactbox {
+    margin: 0px 20px;
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    line-height: 50px;
+    height: 75vh;
+}
+
+input {
+    border-style: none;
+    background-color: rgb(150, 150, 150);
+    width: 250px;
+    height: 25px;
+    font-family: roboto, sans-serif;
+    font-weight: 500;
+    color: white;
+}
+
+::placeholder {
+    color: white;
+    padding-left: 2px;
+}
+
+input:hover {
+    background-color: rgb(255, 149, 62) ;
+}
+
+input:focus {
+    background-color: rgb(255, 149, 62);
+    font-weight: 500;
+    outline: none;
+}
+
+select {
+    border-style: none;
+    background-color: rgb(150, 150, 150);
+    width: 254px;
+    height: 25px;
+    font-family: roboto, sans-serif;
+    font-weight: 500;
+    color: white;
+}
+
+select:focus {
+    outline: none;
+}
+
+.derecha {
+    margin: auto 15px;
+}
+
+.derecha h2 {
+    font-size: 1.875rem;
+}
+
+textarea {
+    resize: none;
+    width: 250px;
+    height: 150px;
+    background-color: rgb(150, 150, 150);
+    font-family: roboto, sans-serif;
+    padding-left: 2px;
+    border-style: hidden;
+    font-weight: 500;
+    color: white;
+}
+
+textarea:focus {
+    background-color: rgb(255, 149, 62);
+    font-weight: 500;
+    outline: none;
+}
+
+button {
+    border-style: hidden;
+    background-color: rgb(150, 150, 150);
+    color: white;
+    font-weight: 500;
+    font-family: inherit;
+    width: 70px;
+    height: 30px;
+}
+
+button:hover {
+    background-color: rgb(255, 149, 62);
+}
+
+button:focus {
+    outline: none;
+}
+
+.izquierda {
+    margin: auto 0;
+}
+
+.izquierda ul {
+    list-style-type: none;
+}
+
+.izquierda li {
+    display: inline;
+    padding: 20px;
+}
+
+.izquierda a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 70px;
+}
+
+.izquierda a:hover {
+    color: rgb(255, 149, 62);
+}
+
+#aboutMe {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-row: auto;
+    grid-gap: 1rem;
+    grid-template-areas: 
+    'bio2 bio1';
+
+}
+
+.fotoPerfil {
+    margin: 0 20px;
+    grid-area: bio2;
+}
+
+.fotoPerfil img {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.bio {
+    width: 500px;
+    grid-area: bio1;
+}
+
+#topButton {
+    margin: 0 50vw 0 50vw;
+    font-size: 60px;
+}
+
+
+
+.containerGallery {
+    width: 98%;
+    max-width: 120rem;
+    margin: auto;
+    padding: 0 0.625rem;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-row: auto;
+    grid-gap: 1rem;
+    grid-template-areas:
+    'land1 land1 land1 land1 land1'
+    'land13 land2 land8 land8 land8' 
+    'land7 land7 land6 land6 land6'
+    'land4 land5 land5 land5 land5'
+    'land12 land12 land12 land14 land16'
+    'land3 land3 land3 land3 land3'   
+    'land10 land10 land11 land11 land11' 
+    'land9 land9 land9 land9 land9' 
+}
+
+.gallery a {
+    width: 100%;
+    height: 35rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.gallery a:hover {
+    transform: scale(.99);
+    z-index: 1;
+}    
+
+.landimg1 {
+    grid-area: land1;
+    min-height: 61rem;
+    background-image: url(images/Landscapes/Photo.jpg);
+}
+
+.landimg2 {
+    grid-area: land2;
+    background-image: url(images/Landscapes/Photo-2.jpg);
+}
+
+.landimg3 {
+    grid-area: land3;
+    min-height: 61rem;
+    background-image: url(images/Landscapes/Photo-3.jpg);
+}
+
+.landimg4 {
+    grid-area: land4;
+    background-image: url(images/Landscapes/Photo-4.jpg);
+}
+
+.landimg5 {
+    grid-area: land5;
+    background-image: url(images/Landscapes/Photo-5.jpg);
+}
+
+.landimg6 {
+    grid-area: land6;
+    background-image: url(images/Landscapes/Photo-6.jpg);
+}
+
+.landimg7 {
+    grid-area: land7;
+    background-image: url(images/Landscapes/Photo-7.jpg);
+}
+
+.landimg8 {
+    grid-area: land8;
+    background-image: url(images/Landscapes/Photo-8.jpg);
+}
+
+.landimg9 {
+    grid-area: land9;
+    min-height: 41rem;
+    background-image: url(images/Landscapes/Photo-9.jpg);
+}
+
+.landimg10 {
+    grid-area: land10;
+    background-image: url(images/Landscapes/Photo-10.jpg);
+}
+
+.landimg11 {
+    grid-area: land11;
+    background-image: url(images/Landscapes/Photo-11.jpg);
+}
+
+.landimg12 {
+    grid-area: land12;
+    background-image: url(images/Landscapes/Photo-12.jpg);
+}
+
+.landimg13 {
+    grid-area: land13;
+    background-image: url(images/Landscapes/Photo-13.jpg);
+}
+
+.landimg14 {
+    grid-area: land14;
+    background-image: url(images/Landscapes/Photo-14.jpg);
+}
+
+.landimg16 {
+    grid-area: land16;
+    background-image: url(images/Landscapes/Photo-16.jpg);
+}
+
+.containerPortrait {
+    width: 98%;
+    max-width: 120rem;
+    margin: auto;
+    padding: 0 0.625rem;
+}
+
+.galleryPortra {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-row: auto;
+    grid-gap: 1rem;
+    grid-template-areas:
+    'port6 port9 port10 port8 port12'
+    'port5 port5 port7 port7 port7'
+    'port1 port2 port3 port11 port4';
+}
+
+.galleryPortra a {
+    width: 100%;
+    height: 37rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.galleryPortra a:hover {
+    transform: scale(.99);
+    z-index: 1;
+}
+
+.portra1 {
+    grid-area: port1;
+    background-image: url(images/Portraits/Photo.jpg);
+}
+
+.portra2 {
+    grid-area: port2;
+    background-image: url(images/Portraits/Photo-2.jpg);
+}
+
+.portra3 {
+    grid-area: port3;
+    background-image: url(images/Portraits/Photo-3.jpg);
+}
+
+.portra4 {
+    grid-area: port4;
+    background-image: url(images/Portraits/Photo-4.jpg);
+}
+
+.portra5 {
+    grid-area: port5;
+    background-image: url(images/Portraits/Photo-5.jpg);
+}
+
+.portra6 {
+    grid-area: port6;
+    background-image: url(images/Portraits/Photo-6.jpg);
+}
+
+.portra7 {
+    grid-area: port7;
+    background-image: url(images/Portraits/Photo-7.jpg);
+}
+
+.portra8 {
+    grid-area: port8;
+    background-image: url(images/Portraits/Photo-8.jpg);
+}
+
+.portra9 {
+    grid-area: port9;
+    background-image: url(images/Portraits/Photo-9.jpg);
+}
+
+.portra10 {
+    grid-area: port10;
+    background-image: url(images/Portraits/Photo-10.jpg);
+}
+
+.portra11 {
+    grid-area: port11;
+    background-image: url(images/Portraits/Photo-11.jpg);
+}
+
+.portra12 {
+    grid-area: port12;
+    background-image: url(images/Portraits/Photo-12.jpg);
+}
+
+.containerStreet {
+    width: 98%;
+    max-width: 120rem;
+    margin: auto;
+    padding: 0 0.625rem;
+}
+
+.galleryStreet {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row: auto;
+    grid-gap: 1rem;
+    grid-template-areas:
+    'street11 street11 street11 street11'
+    'street11 street11 street11 street11'
+    'street10 street4 street4 street3'
+    'street28 street28 street32 street32'
+    'street9 street25 street25 street5'
+    'street1 street13 street13 street2'
+    'street31 street13 street13 street34'
+    'street29 street29 street30 street15'
+    'street23 street23 street19 street18'
+    'street23 street23 street19 street18'
+    'street26 street27 street24 street24'
+    'street6 street6 street8 street14'
+    'street7 street12 street17 street22'
+    'street21 street33 street20 street16';
+}
+
+.galleryStreet a {
+    width: 100%;
+    height: 36rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.galleryStreet a:hover {
+    transform: scale(.99);
+    z-index: 1;
+}
+
+.street1 {
+    grid-area: street1;
+    background-image: url(images/StreetSeries/Photo.jpg);
+}
+
+.street2 {
+    grid-area: street2;
+    background-image: url(images/StreetSeries/Photo-2.jpg);
+}
+
+.street3 {
+    grid-area: street3;
+    background-image: url(images/StreetSeries/Photo-3.jpg);
+}
+
+.street4 {
+    grid-area: street4;
+    background-image: url(images/StreetSeries/Photo-4.jpg);
+}
+
+.street5 {
+    grid-area: street5;
+    background-image: url(images/StreetSeries/Photo-5.jpg);
+}
+
+.street6 {
+    grid-area: street6;
+    background-image: url(images/StreetSeries/Photo-6.jpg);
+}
+
+.street7 {
+    grid-area: street7;
+    background-image: url(images/StreetSeries/Photo-7.jpg);
+}
+
+.street8 {
+    grid-area: street8;
+    background-image: url(images/StreetSeries/Photo-8.jpg);
+}
+
+.street9 {
+    grid-area: street9;
+    background-image: url(images/StreetSeries/Photo-9.jpg);
+}
+
+.street10 {
+    grid-area: street10;
+    background-image: url(images/StreetSeries/Photo-10.jpg);
+}
+
+.street11 {
+    grid-area: street11;
+    min-height: 51rem;
+    background-image: url(images/StreetSeries/Photo-11.jpg);
+}
+
+.street12 {
+    grid-area: street12;
+    background-image: url(images/StreetSeries/Photo-12.jpg);
+}
+
+.street13 {
+    grid-area: street13;
+    min-height: 73rem;
+    background-image: url(images/StreetSeries/Photo-13.jpg);
+}
+
+.street14 {
+    grid-area: street14;
+    background-image: url(images/StreetSeries/Photo-14.jpg);
+}
+
+.street15 {
+    grid-area: street15;
+    background-image: url(images/StreetSeries/Photo-15.jpg);
+}
+
+.street16 {
+    grid-area: street16;
+    background-image: url(images/StreetSeries/Photo-16.jpg);
+}
+
+.street17 {
+    grid-area: street17;
+    background-image: url(images/StreetSeries/Photo-17.jpg);
+}
+
+.street18 {
+    grid-area: street18;
+        min-height: 51rem;
+    background-image: url(images/StreetSeries/Photo-18.jpg);
+}
+
+.street19 {
+    grid-area: street19;
+    min-height: 51rem;
+    background-image: url(images/StreetSeries/Photo-19.jpg);
+}
+
+.street20 {
+    grid-area: street20;
+    background-image: url(images/StreetSeries/Photo-20.jpg);
+}
+
+.street21 {
+    grid-area: street21;
+    background-image: url(images/StreetSeries/Photo-21.jpg);
+}
+
+.street22 {
+    grid-area: street22;
+    background-image: url(images/StreetSeries/Photo-22.jpg);
+}
+
+.street23 {
+    grid-area: street23;
+    min-height: 51rem;
+    background-image: url(images/StreetSeries/Photo-23.jpg);
+}
+
+.street24 {
+    grid-area: street24;
+    background-image: url(images/StreetSeries/Photo-24.jpg);
+}
+
+.street25 {
+    grid-area: street25;
+    background-image: url(images/StreetSeries/Photo-25.jpg);
+}
+
+.street26 {
+    grid-area: street26;
+    background-image: url(images/StreetSeries/Photo-26.jpg);
+}
+
+.street27 {
+    grid-area: street27;
+    background-image: url(images/StreetSeries/Photo-27.jpg);
+}
+
+.street28 {
+    grid-area: street28;
+    background-image: url(images/StreetSeries/Photo-28.jpg);
+}
+
+.street29 {
+    grid-area: street29;
+    background-image: url(images/StreetSeries/Photo-29.jpg);
+}
+
+.street30 {
+    grid-area: street30;
+    background-image: url(images/StreetSeries/Photo-30.jpg);
+}
+
+.street31 {
+    grid-area: street31;
+    background-image: url(images/StreetSeries/Photo-31.jpg);
+}
+
+.street32 {
+    grid-area: street32;
+    background-image: url(images/StreetSeries/Photo-32.jpg);
+}
+
+.street33 {
+    grid-area: street33;
+    background-image: url(images/StreetSeries/Photo-33.jpg);
+}
+
+.street34 {
+    grid-area: street34;
+    background-image: url(images/StreetSeries/Photo-34.jpg);
+}
+
+
+@media screen and (max-width:1070px) {
+
+    label.logo{
+        font-size: 40px;
+        padding-left: 50px;
+        position: fixed;
+        z-index: 2;
+        background: white;
+        width: 100%;
+    }
+
+    .checkbut{
+        display: block;
+        font-size: 35px;
+        z-index: 3;
+        position: fixed;
+        background: white;
+        width: 20px;
+        margin-left: .5rem;
+    }
+
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100px;
+        background:  rgb(150, 150, 150);
+        color: white;
+        top: 63px;
+        left: -110%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 2;
+        padding-left: 10px;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+
+    nav ul li{
+        display: inline-block;
+        list-style: nose;
+    }
+
+    nav ul li a{
+        font-size: 20px;
+    }
+
+    .containerPortrait {
+        padding: 0;
+    }
+
+    .containerLandscapes {
+        padding: 0;
+    }
+
+    .containerStreet {
+        padding: 0;
+    }
+
+    .galleryLandscapes {
+        grid-gap: .5rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        'land1 land1 land1 land1'
+        'land13 land13 land2 land2'
+        'land8 land8 land8 land8'
+        'land7 land7 land7 land7'
+        'land6 land6 land6 land6'
+        'land4 land4 land4 land4'
+        'land5 land5 land5 land5'
+        'land12 land12 land12 land12'
+        'land14 land14 land16 land16'
+        'land3 land3 land3 land3'
+        'land10 land10 land10 land10'
+        'land11 land11 land11 land11'
+        'land9 land9 land9 land9'
+    }
+
+    .galleryPortra {
+        grid-gap: .5rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        'port6 port6 port8 port8'
+        'port9 port9 port10 port10'
+        'port12 port12 port5 port5'
+        'port7 port7 port7 port7'
+        'port1 port1 port2 port2'
+        'port3 port3 port11 port11'
+        'port4 port4 port4 port4';
+    }
+
+    .galleryStreet {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: .5rem;
+        grid-template-areas:
+        'street11 street11 street11 street11'
+        'street11 street11 street11 street11'
+        'street4 street4 street4 street4'
+        'street10 street10 street3 street3'
+        'street28 street28 street28 street28'
+        'street32 street32 street32 street32'
+        'street9 street9 street5 street5'
+        'street25 street25 street25 street25'
+        'street1 street1 street2 street2'
+        'street13 street13 street19 street19'
+        'street31 street31 street34 street34'
+        'street29 street29 street29 street29'
+        'street30 street30 street15 street15'
+        'street23 street23 street18 street18'
+        'street26 street26 street27 street27'
+        'street24 street24 street24 street24'
+        'street8 street8 street14 street14'
+        'street6 street6 street6 street6'
+        'street7 street7 street12 street12'
+        'street17 street17 street21 street21'
+        'street33 street33 street20 street20'
+        'street22 street22 street16 street16';
+    }
+
+    .galleryLandscapes a {
+        height: 25rem;
+    }
+
+    .galleryPortra a {
+        height: 30rem;
+    }
+
+    .galleryStreet a {
+        height: 30rem;
+    }
+
+    .gallery a:hover {
+        transform: scale(.98);
+        z-index: 1;
+    }
+    
+    .landimg1 {
+        grid-area: land1;
+        min-height: 30rem;
+        background-image: url(images/Landscapes/Photo.jpg);
+    }
+
+    .landimg2 {
+        grid-area: land2;
+        min-height: 40rem;
+        background-image: url(images/Landscapes/Photo-2.jpg);
+    }
+
+    .landimg13 {
+        grid-area: land13;
+        min-height: 40rem;
+        background-image: url(images/Landscapes/Photo-13.jpg);
+    }
+
+    .landimg14 {
+        grid-area: land14;
+        min-height: 40rem;
+        background-image: url(images/Landscapes/Photo-14.jpg);
+    }
+
+    .landimg16 {
+        grid-area: land16;
+        min-height: 40rem;
+        background-image: url(images/Landscapes/Photo-16.jpg);
+    }
+
+    .landimg3 {
+        grid-area: land3;
+        min-height: 27rem;
+        background-image: url(images/Landscapes/Photo-3.jpg);
+    }
+
+    .landimg10 {
+        grid-area: land10;
+        min-height: 30rem;
+        background-image: url(images/Landscapes/Photo-10.jpg);
+    }
+
+    .landimg9 {
+        grid-area: land9;
+        min-height: 25rem;
+        background-image: url(images/Landscapes/Photo-9.jpg);
+    }
+
+    .street11 {
+        grid-area: street11;
+        min-height: 30rem;
+        background-image: url(images/StreetSeries/Photo-11.jpg);
+    }
+
+    .street28 {
+        grid-area: street28;
+        min-height: 32rem;
+        background-image: url(images/StreetSeries/Photo-28.jpg);
+    }
+
+    .street13 {
+        grid-area: street13;
+        min-height: 35rem;
+        background-image: url(images/StreetSeries/Photo-13.jpg);
+    }
+
+    .street19 {
+        grid-area: street19;
+        min-height: 35rem;
+        background-image: url(images/StreetSeries/Photo-19.jpg);
+    }
+
+    .street1 {
+        grid-area: street1;
+        min-height: 30rem;
+        background-image: url(images/StreetSeries/Photo.jpg);
+    }
+
+    .street2 {
+        grid-area: street2;
+        min-height: 30rem;
+        background-image: url(images/StreetSeries/Photo-2.jpg);
+    }
+
+    .street23 {
+        grid-area: street23;
+        min-height: 30rem;
+        background-image: url(images/StreetSeries/Photo-23.jpg);
+    }
+
+    .street18 {
+        grid-area: street18;
+        min-height: 30rem;
+        background-image: url(images/StreetSeries/Photo-18.jpg);
+    }
+}
+
+@media screen and (max-width:480px) {
+
+    label.logo{
+        font-size: 40px;
+        padding-left: 50px;
+        position: fixed;
+        z-index: 2;
+        background: white;
+        width: 100%;
+    }
+
+    .checkbut{
+        display: block;
+        font-size: 35px;
+        z-index: 3;
+        position: fixed;
+        background: white;
+        width: 5%;
+        margin-left: .5rem;
+    }
+
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 364px;
+        background:  rgb(150, 150, 150);
+        color: white;
+        top: 63px;
+        left: -110%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 2;
+        padding-left: 10px;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+
+    nav ul li{
+        display: block;
+    }
+
+    nav ul li a{
+        font-size: 20px;
+    }
+
+
+    .containerPortrait {
+        padding: 0;
+    }
+
+    .containerLandscapes {
+        padding: 0;
+    }
+
+    .containerStreet {
+        padding: 0;
+    }
+
+
+    .galleryLandscapes{
+        grid-gap: .5rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        'land1 land1 land1 land1'
+        'land13 land13 land2 land2'
+        'land8 land8 land8 land8'
+        'land7 land7 land7 land7'
+        'land6 land6 land6 land6'
+        'land4 land4 land4 land4'
+        'land5 land5 land5 land5'
+        'land12 land12 land12 land12'
+        'land14 land14 land16 land16'
+        'land3 land3 land3 land3'
+        'land10 land10 land10 land10'
+        'land11 land11 land11 land11'
+        'land9 land9 land9 land9';
+    }
+
+    .galleryPortra {
+        grid-gap: .5rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        'port6 port8'
+        'port9 port9'
+        'port12 port10'
+        'port5 port5'
+        'port7 port7'
+        'port1 port2'
+        'port3 port11'
+        'port4 port4';        
+    }
+
+    .galleryStreet {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: .5rem;
+        grid-template-areas:
+        'street11 street11'
+        'street4 street4'
+        'street10 street3'
+        'street28 street28'
+        'street32 street32'
+        'street9 street5'
+        'street25 street25'
+        'street1 street2'
+        'street13 street19'
+        'street31 street34'
+        'street29 street29'
+        'street30 street15'
+        'street23 street23'
+        'street18 street18'
+        'street26 street27'
+        'street24 street24'
+        'street6 street6'
+        'street8 street14'
+        'street7 street12'
+        'street17 street22'
+        'street17 street22'
+        'street33 street20'
+        'street16 street21'
+    }
+
+
+    .gallery a {
+        height: 15rem;
+    }
+
+    .galleryPortra a {
+        height: 15rem;
+    }
+
+    
+    .galleryStreet a {
+        height: 15rem;
+    }
+
+
+    .landimg1 {
+        grid-area: land1;
+        min-height: 15rem;
+        background-image: url(images/Landscapes/Photo.jpg);
+    }
+
+    .landimg2 {
+        grid-area: land2;
+        min-height: 15rem;
+        background-image: url(images/Landscapes/Photo-2.jpg);
+    }
+
+    .landimg13 {
+        grid-area: land13;
+        min-height: 15rem;
+        background-image: url(images/Landscapes/Photo-13.jpg);
+    }
+
+    .landimg14 {
+        grid-area: land14;
+        min-height: 15rem;
+        background-image: url(images/Landscapes/Photo-14.jpg);
+    }
+
+    .landimg16 {
+        grid-area: land16;
+        min-height: 5rem;
+        background-image: url(images/Landscapes/Photo-16.jpg);
+    }
+
+    .landimg3 {
+        grid-area: land3;
+        min-height: 20rem;
+        background-image: url(images/Landscapes/Photo-3.jpg);
+    }
+
+    .landimg10 {
+        grid-area: land10;
+        min-height: 2rem;
+        background-image: url(images/Landscapes/Photo-10.jpg);
+    }
+
+    .street11 {
+        grid-area: street11;
+        min-height: 15rem;
+        background-image: url(images/StreetSeries/Photo-11.jpg);
+    }
+
+    .street28 {
+        grid-area: street28;
+        min-height: 15rem;
+        background-image: url(images/StreetSeries/Photo-28.jpg);
+    }
+
+    .street13 {
+        grid-area: street13;
+        min-height: 15rem;
+        background-image: url(images/StreetSeries/Photo-13.jpg);
+    }
+
+    .street19 {
+        grid-area: street19;
+        min-height: 15rem;
+        background-image: url(images/StreetSeries/Photo-19.jpg);
+    }
+
+    .street1 {
+        grid-area: street1;
+        min-height: 15rem;
+        background-image: url(images/StreetSeries/Photo.jpg);
+    }
+
+    .street2 {
+        grid-area: street2;
+        min-height: 15rem;
+        background-image: url(images/StreetSeries/Photo-2.jpg);
+    }
+
+    .street23 {
+        grid-area: street23;
+        min-height: 15rem;
+        background-image: url(images/StreetSeries/Photo-23.jpg);
+    }
+
+    .street18 {
+        grid-area: street18;
+        min-height: 20rem;
+        background-image: url(images/StreetSeries/Photo-18.jpg);
+    }
+
+    .landimg9 {
+        grid-area: land9;
+        min-height: 15rem;
+        background-image: url(images/Landscapes/Photo-9.jpg);
+    }
+
+    .gallery a:hover {
+        transform: scale(.98);
+        z-index: 1;
+    }
+
+    .aboutMe {
+        margin: 0px 20px;
+        height: 75vh;
+    }
+    
+    .fotoPerfil {
+        margin: 50px 0;
+    }
+    
+    .fotoPerfil img {
+        width: 300px;
+        margin: 0 auto;
+    }
+    
+    .bio {
+        margin: 30px auto;
+    }
+
+}

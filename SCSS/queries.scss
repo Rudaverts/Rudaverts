@@ -1,0 +1,894 @@
+@media screen and (max-width:1200px) {
+
+
+
+    nav {
+        
+        label.logo{
+        font-size: 40px;
+        padding-left: 50px;
+        position: fixed;
+        z-index: 2;
+        background: white;
+        width: 100%;
+        margin-left: 20px;
+        height: 70px;
+    } 
+
+    .checkbut{
+        display: block;
+        font-size: 40px;
+        z-index: 3;
+        position: fixed;
+        background: white;
+        width: 50px;
+        padding: 15px 0 0 15px;
+        height: 55px;
+    }
+
+    #check {
+        display: none;
+    }
+
+    ul{
+        position: fixed;
+        width: 100%;
+        background:  rgb(150, 150, 150);
+        top: 63px;
+        left: -110%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 3;
+        padding-left: 10px;
+        margin: 0;
+
+        li{
+            a{
+                font-size: 20px;
+                color: white;
+                display: list-item;
+            }
+        }  
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+ }
+
+
+ #portadaRud {
+    position: relative;
+    height: 100%;
+    display: none;
+ }
+
+ #portadaMobile {
+    position: relative;
+    height: 100%;
+    display: block;
+
+    img{
+        width: 100%;
+    }
+
+    .portadaM1 {
+        position: absolute;
+    
+        animation: aparecer1 30s ease-in infinite;
+    }
+    .portadaM2 {
+        position: absolute;
+        opacity: 0;
+        
+        animation: aparecer2 30s ease-in infinite;
+    }
+    .portadaM3 {
+        position: absolute;
+        opacity: 0;
+    
+        animation: aparecer3 30s ease-in infinite;
+    }
+    .portadaM4 {
+        position: relative;
+        opacity: 0;
+    
+        animation: aparecer4 30s ease-in infinite;
+    }
+}
+
+.aboutMe {
+
+    height: 84vh;
+    width: 95%;
+    margin: auto;
+    padding: 0 0.625rem;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-row: auto;
+    grid-gap: 10px;
+    grid-template-areas: 
+    'bio2 bio1';
+
+    .fotoPerfil {
+        margin: 0;
+        width: 200px;
+        grid-area: bio2;
+
+        img {
+            width: 200px;
+        }
+    }
+
+    .bio {
+        grid-area: bio1;
+        width: 95%;
+        margin-top: 60px;
+        font-size: 20px;
+    }
+
+
+}
+
+ .containerLandscapes {
+    padding: 0;
+
+    .galleryLandscapes {
+        grid-gap: .5rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        'land1 land1 land1 land1'
+        'land13 land13 land2 land2'
+        'land8 land8 land8 land8'
+        'land7 land7 land7 land7'
+        'land6 land6 land6 land6'
+        'land4 land4 land4 land4'
+        'land5 land5 land5 land5'
+        'land12 land12 land12 land12'
+        'land14 land14 land16 land16'
+        'land3 land3 land3 land3'
+        'land10 land10 land10 land10'
+        'land11 land11 land11 land11'
+        'land9 land9 land9 land9';
+
+        a {
+            height: 25rem;
+        }
+
+        .landimg1 {
+            grid-area: land1;
+            min-height: 30rem;
+            background-image: url(../images/Landscapes/Photo.jpg);
+        }
+    
+        .landimg2 {
+            grid-area: land2;
+            min-height: 40rem;
+            background-image: url(../images/Landscapes/Photo-2.jpg);
+        }
+    
+        .landimg13 {
+            grid-area: land13;
+            min-height: 40rem;
+            background-image: url(../images/Landscapes/Photo-13.jpg);
+        }
+    
+        .landimg14 {
+            grid-area: land14;
+            min-height: 40rem;
+            background-image: url(../images/Landscapes/Photo-14.jpg);
+        }
+    
+        .landimg16 {
+            grid-area: land16;
+            min-height: 40rem;
+            background-image: url(../images/Landscapes/Photo-16.jpg);
+        }
+    
+        .landimg3 {
+            grid-area: land3;
+            min-height: 27rem;
+            background-image: url(../images/Landscapes/Photo-3.jpg);
+        }
+    
+        .landimg10 {
+            grid-area: land10;
+            min-height: 30rem;
+            background-image: url(../images/Landscapes/Photo-10.jpg);
+        }
+    
+        .landimg9 {
+            grid-area: land9;
+            min-height: 25rem;
+            background-image: url(../images/Landscapes/Photo-9.jpg);
+        }
+    
+    }
+}
+
+ .containerPortrait {
+    padding: 0;
+    .galleryPortra {
+        grid-gap: .5rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        'port6 port6 port8 port8'
+        'port9 port9 port10 port10'
+        'port12 port12 port5 port5'
+        'port7 port7 port7 port7'
+        'port1 port1 port2 port2'
+        'port3 port3 port11 port11'
+        'port4 port4 port4 port4';
+
+        a {
+            height: 40rem;
+        }
+    }
+}
+
+    .containerStreet {
+        padding: 0;
+
+        .galleryStreet {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-gap: .5rem;
+            grid-template-areas:
+            'street11 street11 street11 street11'
+            'street11 street11 street11 street11'
+            'street4 street4 street4 street4'
+            'street10 street10 street3 street3'
+            'street28 street28 street28 street28'
+            'street32 street32 street32 street32'
+            'street9 street9 street5 street5'
+            'street25 street25 street25 street25'
+            'street1 street1 street2 street2'
+            'street13 street13 street19 street19'
+            'street31 street31 street34 street34'
+            'street29 street29 street29 street29'
+            'street30 street30 street15 street15'
+            'street23 street23 street18 street18'
+            'street26 street26 street27 street27'
+            'street24 street24 street24 street24'
+            'street8 street8 street14 street14'
+            'street6 street6 street6 street6'
+            'street7 street7 street12 street12'
+            'street17 street17 street21 street21'
+            'street33 street33 street20 street20'
+            'street22 street22 street16 street16';
+
+            a {
+                height: 30rem;
+            }
+
+            .street11 {
+                grid-area: street11;
+                min-height: 30rem;
+                background-image: url(../images/StreetSeries/Photo-11.jpg);
+            }
+        
+            .street28 {
+                grid-area: street28;
+                min-height: 32rem;
+                background-image: url(../images/StreetSeries/Photo-28.jpg);
+            }
+        
+            .street13 {
+                grid-area: street13;
+                min-height: 35rem;
+                background-image: url(../images/StreetSeries/Photo-13.jpg);
+            }
+        
+            .street19 {
+                grid-area: street19;
+                min-height: 35rem;
+                background-image: url(../images/StreetSeries/Photo-19.jpg);
+            }
+        
+            .street1 {
+                grid-area: street1;
+                min-height: 30rem;
+                background-image: url(../images/StreetSeries/Photo.jpg);
+            }
+        
+            .street2 {
+                grid-area: street2;
+                min-height: 30rem;
+                background-image: url(../images/StreetSeries/Photo-2.jpg);
+            }
+        
+            .street23 {
+                grid-area: street23;
+                min-height: 30rem;
+                background-image: url(../images/StreetSeries/Photo-23.jpg);
+            }
+        
+            .street18 {
+                grid-area: street18;
+                min-height: 30rem;
+                background-image: url(../images/StreetSeries/Photo-18.jpg);
+            }
+        }
+    }
+}
+
+@media screen and (max-width:700px) { 
+   
+    nav {
+      label.logo{
+        font-size: 40px;
+        padding-left: 40px;
+        position: fixed;
+        z-index: 2;
+        background: white;
+        width: 100%;
+    }
+
+    .checkbut{
+        display: block;
+        font-size: 40px;
+        z-index: 3;
+        position: fixed;
+        background: white;
+        width: 10%;
+        padding: 15px 0 0 15px;
+    }
+
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 300px;
+        background:  rgb(150, 150, 150);
+        color: white;
+        top: 70px;
+        left: -110%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 3;
+        padding-left: 10px;        
+      
+    li{
+        display: list-item;
+        a{
+            font-size: 20px;
+        }
+     }
+    }
+}
+
+.containerPortrait {
+    padding: 0;
+
+    .galleryPortra {
+        grid-gap: .5rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        'port6 port8'
+        'port9 port9'
+        'port12 port10'
+        'port5 port5'
+        'port7 port7'
+        'port1 port2'
+        'port3 port11'
+        'port4 port4';
+        
+        a {
+            height: 15rem;
+        }
+    }
+}
+
+.containerStreet {
+    padding: 0;
+
+    .galleryStreet {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: .5rem;
+        grid-template-areas:
+        'street11 street11'
+        'street4 street4'
+        'street10 street3'
+        'street28 street28'
+        'street32 street32'
+        'street9 street5'
+        'street25 street25'
+        'street1 street2'
+        'street13 street19'
+        'street31 street34'
+        'street29 street29'
+        'street30 street15'
+        'street23 street23'
+        'street18 street18'
+        'street26 street27'
+        'street24 street24'
+        'street6 street6'
+        'street8 street14'
+        'street7 street12'
+        'street17 street22'
+        'street17 street22'
+        'street33 street20'
+        'street16 street21';
+
+        a {
+            height: 15rem;
+        }
+
+        .street11 {
+            grid-area: street11;
+            min-height: 15rem;
+            background-image: url(../images/StreetSeries/Photo-11.jpg);
+        }
+    
+        .street28 {
+            grid-area: street28;
+            min-height: 15rem;
+            background-image: url(../images/StreetSeries/Photo-28.jpg);
+        }
+    
+        .street13 {
+            grid-area: street13;
+            min-height: 15rem;
+            background-image: url(../images/StreetSeries/Photo-13.jpg);
+        }
+    
+        .street19 {
+            grid-area: street19;
+            min-height: 15rem;
+            background-image: url(../images/StreetSeries/Photo-19.jpg);
+        }
+    
+        .street1 {
+            grid-area: street1;
+            min-height: 15rem;
+            background-image: url(../images/StreetSeries/Photo.jpg);
+        }
+    
+        .street2 {
+            grid-area: street2;
+            min-height: 15rem;
+            background-image: url(../images/StreetSeries/Photo-2.jpg);
+        }
+    
+        .street23 {
+            grid-area: street23;
+            min-height: 17rem;
+            background-image: url(../images/StreetSeries/Photo-23.jpg);
+        }
+    
+        .street18 {
+            grid-area: street18;
+            min-height: 20rem;
+            background-image: url(../images/StreetSeries/Photo-18.jpg);
+        }
+    }
+}
+
+.containerLandscapes {
+    padding: 0;
+
+    .galleryLandscapes{
+        grid-gap: .5rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        'land1 land1 land1 land1'
+        'land13 land13 land2 land2'
+        'land8 land8 land8 land8'
+        'land7 land7 land7 land7'
+        'land6 land6 land6 land6'
+        'land4 land4 land4 land4'
+        'land5 land5 land5 land5'
+        'land12 land12 land12 land12'
+        'land14 land14 land16 land16'
+        'land3 land3 land3 land3'
+        'land10 land10 land10 land10'
+        'land11 land11 land11 land11'
+        'land9 land9 land9 land9';
+
+        a {
+            height: 15rem;
+        }
+
+        .landimg1 {
+            grid-area: land1;
+            min-height: 15rem;
+            background-image: url(../images/Landscapes/Photo.jpg);
+        }
+    
+        .landimg2 {
+            grid-area: land2;
+            min-height: 15rem;
+            background-image: url(../images/Landscapes/Photo-2.jpg);
+        }
+    
+        .landimg13 {
+            grid-area: land13;
+            min-height: 15rem;
+            background-image: url(../images/Landscapes/Photo-13.jpg);
+        }
+    
+        .landimg14 {
+            grid-area: land14;
+            min-height: 15rem;
+            background-image: url(../images/Landscapes/Photo-14.jpg);
+        }
+    
+        .landimg16 {
+            grid-area: land16;
+            min-height: 5rem;
+            background-image: url(../images/Landscapes/Photo-16.jpg);
+        }
+    
+        .landimg3 {
+            grid-area: land3;
+            min-height: 20rem;
+            background-image: url(../images/Landscapes/Photo-3.jpg);
+        }
+
+        .landimg9 {
+            grid-area: land9;
+            min-height: 15rem;
+            background-image: url(../images/Landscapes/Photo-9.jpg);
+        }
+    
+        .landimg10 {
+            grid-area: land10;
+            min-height: 2rem;
+            background-image: url(../images/Landscapes/Photo-10.jpg);
+        }
+
+        a:hover {
+            transform: scale(.98);
+            z-index: 1;
+        }
+    }
+}
+
+.aboutMe {
+    margin: 0 10px 0 10px;
+    height: 100vh;
+    display: block;
+    padding: 0;
+
+    .fotoPerfil {
+        width: 200px;
+
+        img {
+            width: 200px;
+            margin: 0 auto;
+        }
+    }
+
+    .bio {
+        width: 100%;
+        margin-bottom: 100px;
+
+        p {
+
+            padding: 0 10px 0 0;
+        }
+    }
+}
+}
+
+@media screen and (max-width:480px) {
+
+    nav {
+
+      ul{
+          position: fixed;
+          width: 100%;
+          height: 400px;
+          background:  rgb(150, 150, 150);
+          color: white;
+          top: 70px;
+          left: -110%;
+          text-align: center;
+          transition: all .5s;
+          z-index: 3;
+          padding-left: 10px;     
+        
+      li{
+          display: list-item;
+          line-height: 57px;
+          a{
+              font-size: 25px;
+          }
+       }
+      }
+  }
+
+  #contactbox {
+    margin: 0rem 1.25rem;
+    line-height: 3.125rem;
+    height: 100vh;
+
+    h2 {
+        font-size: 1.875rem;
+    }
+
+
+    form {
+
+    input {
+        border-style: none;
+        background-color: rgb(150, 150, 150);
+        width: 270px;
+        height: 45px;
+        font-family: roboto, sans-serif;
+        font-weight: 500;
+        color: white;
+        margin: 20px 0 20px 0;
+        font-size: 20px;
+
+    }
+
+    select {
+        border-style: none;
+        background-color: $fontGray;
+        width: 17.125rem;
+        height: 2.8125rem;
+        font-family: roboto, sans-serif;
+        font-weight: 500;
+        color: white;
+        margin: 20px 0 ;
+        font-size: 20px;
+    }
+
+    textarea {
+        resize: none;
+        width: 16.875rem;
+        height: 9.375rem;
+        background-color: rgb(150, 150, 150);
+        font-family: roboto, sans-serif;
+        padding-left: 2px;
+        border-style: hidden;
+        font-weight: 500;
+        color: white;
+        margin: 20px 0;
+        font-size: 20px;
+    }
+    
+    button {
+        border-style: hidden;
+        background-color: rgb(150, 150, 150);
+        color: white;
+        font-weight: 500;
+        font-family: inherit;
+        width: 5rem;
+        height: 2.5rem;
+        font-size: 20px;
+    }
+    
+
+}
+}
+}
+
+
+@media screen and (max-height:900px) {
+
+    #portadaMobile {
+        position: relative;
+        height: 70vh;
+        display: block;
+        padding-top: 75px ;
+    }
+}
+
+@media screen and (max-height:1400px) {
+
+
+    #contactbox {
+        margin: 0rem 1.25rem;
+        line-height: 3.125rem;
+        height: 84vh;
+    }
+
+    .aboutMe {
+        height: 90vh;
+
+        .bio {
+            p {
+                font-size: 23px;
+            }
+        }
+    }
+}
+
+@media screen and (height:1024px) {
+
+    #contactbox {
+        margin: 0rem 1.25rem;
+        line-height: 3.125rem;
+        height: 84vh;
+    }
+
+    .aboutMe {
+        height: 86vh;
+    }
+}
+
+@media screen and (max-height:851px) {
+    #portadaMobile {
+        height: 75vh;
+        padding-top: 70px ;
+    }
+
+    .aboutMe {
+        height: 110vh;
+    }
+
+}
+
+@media screen and (max-height:812px) {
+
+    #portadaMobile {
+        height: 75vh;
+        padding-top: 70px ;
+    }
+
+    #contactbox {
+        height: 90vh;
+    }
+
+    .aboutMe {
+        height: 120vh;
+    }
+}
+
+@media screen and (max-height:780px) {
+
+    #portadaMobile {
+        height: 78vh;
+    }
+
+    #contactbox {
+        height: 78vh;
+    }
+
+    .aboutMe {
+        height: 142vh;
+    }
+}
+
+@media screen and (max-height:768px) {
+    #portadaMobile {
+        padding-top: 0;
+        height: 168vh;
+    }
+
+    .aboutMe {
+        height: 82vh;
+    }
+}
+
+@media screen and (max-height:760px) {
+    #portadaMobile {
+        padding-top: 60px;
+        height: 75vh;
+    }
+
+    #contactbox {
+        height: 100vh;
+    }
+
+    .aboutMe {
+        height: 130vh;
+    }
+
+}
+
+@media screen and (max-height:736px) {
+
+    #portadaMobile {
+        height: 80vh;
+        padding-top: 10px;
+    }
+
+    #contactbox {
+        height: 95vh;
+    }
+
+    .aboutMe {
+        height: 120vh;
+    }
+}
+
+
+@media screen and (max-height:667px) {
+
+    #portadaMobile {
+        height: 75vh;
+        padding-top: 20px ;
+    }
+
+    #contactbox {
+        height: 110vh;
+    }
+
+    .aboutMe {
+        height: 150vh;
+    }
+
+}
+
+@media screen and (max-height:568px) {
+
+    
+    #contactbox {
+        height: 125vh;
+    }
+}
+
+@media screen and (max-height:500px) {
+
+    nav{
+    label.logo{
+        padding-left: 63px;
+    }
+}
+
+    #portadaMobile {
+        height: 225vh;
+        padding-top: 20px ;
+    }
+
+    #contactbox {
+        height: 150vh;
+    }
+
+    .aboutMe {
+        height: 78vh;
+
+        .bio {
+            p {
+                font-size: 19px;
+            }
+        }
+    }
+}
+
+@media screen and (max-height:400px) {
+
+    #portadaMobile {
+        height: 275vh;
+    }
+
+    .aboutMe {
+        height: 92vh;
+
+        .bio {
+            p {
+                font-size: 20.3px;
+            }
+        }
+    }
+}
+
+@media screen and (max-height:375px) {
+    #portadaMobile {
+        padding-top: 0;
+        height: 270vh;
+    }
+
+    .aboutMe {
+        padding-top: 0;
+        height: 88vh;
+
+        .bio {
+            p {
+                font-size: 19px;
+            }
+        }
+    }
+}
+
+@media screen and (max-height:360px) {
+
+    #portadaMobile {
+        padding-top: 0;
+    }
+
+    footer {
+        display: none;
+    }
+}
